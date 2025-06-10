@@ -31,7 +31,7 @@ export default class Card extends Component {
 
                       </div>
                       <div className='flex justify-center items-center w-full h-full col-span-2'>
-                        <p className='w-[75%] font-semibold'>
+                        <p className='w-[75%] font-semibold font-primary'>
                           Reading the Constitution is essential because it empowers you with the knowledge of your fundamental rights, duties, and the framework that governs our democracy. It helps you understand how laws are made, how power is distributed, and how justice is delivered. By knowing the Constitution, you become an informed citizen who can question injustice, participate meaningfully in civic life, and ensure that your rights—and the rights of others—are respected and upheld.
                         </p>
                       </div>

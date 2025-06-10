@@ -11,7 +11,7 @@ export default class Navbar extends Component {
         <img src={Law_Lens} alt="Law Lens Logo" className="w-50 h-20 pl-15 pt-2 gap-[2vw]" />
         
         <div className='ml-10'>
-          <ul className='flex items-center flex-wrap gap-[4vw] text-xl  aspekta-font'>
+          <ul className='flex items-center flex-wrap gap-[4vw] text-xl  font-navbar'>
             <li>
               <a className='hover:text-gray-500 duration-150' href="">Home</a>
             </li>

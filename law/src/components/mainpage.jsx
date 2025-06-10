@@ -12,7 +12,7 @@ export default class mainpage extends Component {
                     <img src={leftMainText} alt="Law Lens Logo" className="w-80  " />
                 </div>
                 <div className='flex justify-end mt-10'>
-                    <p className='text-left m-4 w-[75%] justify-end '>
+                    <p className='text-left m-4 w-[75%] justify-end font-primary'>
                         Describe What Happened.  We'll instantly show you the laws that protect you. Empower yourself with knowledge, clarity, and confidence because knowing your rights changes everything.
                     </p>
 
@@ -33,7 +33,7 @@ export default class mainpage extends Component {
             </div>
             <div className='col-span-3 min-h-100 w-[95%]'>
                 <div className='flex justify-start mt-10'>
-                    <p className='text-left m-4 w-[75%] justify-center '>
+                    <p className='text-left m-4 w-[75%] justify-center font-primary'>
                         Tell Us What You Faced.  We'll quickly guide you to the laws that support you. Take control with clear, reliable information—because understanding your legal rights is the first step toward justice, safety, and self-respect.
                     </p>
 

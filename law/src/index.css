@@ -1,3 +1,8 @@
 @import "tailwindcss";
 
+@theme{
+    --font-primary:"Inria Sans", "sans-serif";
+    --font-navbar:"Roboto Condensed","sans-serif"
+}
+
 

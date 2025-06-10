@@ -43,7 +43,7 @@ export default class Card extends Component {
 
               </div>
               <div className='flex justify-center items-center'>
-              <div className='w-[700px] py-10 font-semibold mb-5'>
+              <div className='w-[700px] py-10 font-semibold mb-5 font-primary' >
                 <p>
                     Tell us what happened in your situation—whether it’s something you experienced, witnessed, or are unsure about. The more details you share, the better we can understand your case and identify all the laws that exist to protect you. Our goal is to help you feel informed, supported, and empowered with the legal knowledge you need to stand up for your rights.
                 </p>

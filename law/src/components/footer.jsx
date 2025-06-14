@@ -2,7 +2,7 @@ export default function Footer2() {
   return (
     <div style={{backgroundColor:'#F0ECE8'}} className="flex justify-center h-[500px] "> 
     <footer style={{backgroundColor:'#3B3B3B'}} className="py-6 w-[85%] p-10 m-10 rounded-3xl">
-      <div className="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
+      <div className="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50 shadow-2xl">
         <div className="grid grid-cols-12">
           <div className="pb-6 col-span-full md:pb-0 md:col-span-6">
             <a href="#" className="flex justify-center space-x-3 md:justify-start">

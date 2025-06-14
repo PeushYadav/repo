@@ -8,6 +8,7 @@ import Mainpage from './components/mainpage'
 import Firstcard from './components/card'
 import Secondcard from './components/card2'
 import Footer2 from './components/footer';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 function App() {
   const [counter, setCounter] = useState(15)
@@ -24,6 +25,7 @@ function App() {
       <Firstcard/>
       <Secondcard/>
       <Footer2/>
+       
     </>
   )
 }

@@ -1,6 +1,6 @@
- import React, { Component } from 'react';
-import Maincont from '../assets/card2maintext.svg';
-import Emblem from '../assets/emblem.svg';
+import React, { Component } from 'react';
+import About from '../assets/About.svg';
+import Law from '../assets/lawlens.svg';
 
 export default class Card extends Component {
   render() {
@@ -13,27 +13,27 @@ export default class Card extends Component {
           <div className='w-[85%] h-[600px] bg-white rounded-2xl shadow-2xl relative'>
             <div className='grid w-full h-[50%]'>
               <div className='flex w-full h-[25%] justify-center pt-5'>
-                <div className='w-[30%]'>
-                  <img src={Maincont} alt="Main Content" className="w-[100%]" />
+                <div className='w-[15%]'>
+                  <img src={About} alt="Main Content" className="w-[100%]" />
                 </div>
               </div>
 
               <div className='grid grid-cols-3 w-full h-full'>
-                <div className='w-full h-full p-10 col-span-1 flex justify-end'>
-                  <img src={Emblem} alt="Emblem" className="w-[40%]" />
+                <div className='w-full h-full mt-10 p-10 col-span-1 flex justify-end'>
+                  <img src={Law} alt="Emblem" className="w-[60%]" />
                 </div>
                 <div className='flex justify-center items-center w-full h-full col-span-2'>
                   <p className='w-[75%] font-semibold font-primary'>
-                    Reading the Constitution is essential because it empowers you with the knowledge of your fundamental rights, duties, and the framework that governs our democracy. It helps you understand how laws are made, how power is distributed, and how justice is delivered. By knowing the Constitution, you become an informed citizen who can question injustice, participate meaningfully in civic life, and ensure that your rights—and the rights of others—are respected and upheld.
+                    Law Lens is a user-friendly platform that simplifies Indian laws and constitutional rights for everyone—from curious beginners to legal enthusiasts. It breaks down complex legal language into clear, accessible explanations and offers interactive tools like a “What Happened?” query system, a searchable law database, and a simplified Constitution viewer. With features such as difficulty levels, modal-based law displays, and gamified learning, Law Lens empowers users to understand their rights and navigate the legal system with confidence.
                   </p>
                 </div>
               </div>
 
               <div className='flex w-full justify-end pr-20'>
                 <button className='w-40px h-full text-2xl font-semibold cursor-pointer'>
-                  <div style={{ backgroundColor: '#BA5C45' }} className='w-60 h-20 flex justify-center items-center rounded-2xl relative'>
+                  <div style={{ backgroundColor: '#BA5C45' }} className='w-60 h-20 flex justify-center items-center rounded-2xl relative shadow-2xl'>
                     <div style={{ backgroundColor: '#EECF95' }} className='w-50 h-13 flex justify-center items-center rounded-2xl px-4'>
-                      <p>Read Now !</p>
+                      <p>Git hub </p>
                     </div>
                   </div>
                 </button>

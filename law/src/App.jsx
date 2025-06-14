@@ -1,33 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import gavel from './assets/gavel.svg';
-import Navbar from './components/navbar'
-import Mainpage from './components/mainpage'
-import Firstcard from './components/card'
-import Secondcard from './components/card2'
+// App.jsx
+import { useRef } from 'react';
+import './App.css';
+import Navbar from './components/navbar';
+import Mainpage from './components/mainpage';
+import Firstcard from './components/card';
+import Secondcard from './components/card2';
+import About from './components/about';
 import Footer2 from './components/footer';
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 function App() {
-  const [counter, setCounter] = useState(15)
+  // Create refs for the sections
+  const homeRef = useRef(null);
+  const learnRef = useRef(null);
+  const aboutRef = useRef(null);
+  const constitutionRef = useRef(null); // If you have a constitution component
 
-  const addValue = () => {
-    console.log("clicked", counter)
-    setCounter(counter + 1)
-  }
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <>
-      <Navbar />
-      <Mainpage />
-      <Firstcard/>
-      <Secondcard/>
-      <Footer2/>
-       
+      <Navbar
+        onNavigate={{
+          home: () => scrollToSection(homeRef),
+          learn: () => scrollToSection(learnRef),
+          about: () => scrollToSection(aboutRef),
+          constitution: () => scrollToSection(constitutionRef),
+        }}
+      />
+      <div ref={homeRef}><Mainpage /></div>
+      <div ref={learnRef}><Firstcard /></div>
+      <Secondcard />
+      <div ref={aboutRef}><About /></div>
+      <Footer2 />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

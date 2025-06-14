@@ -20,7 +20,7 @@ const Card = () => {
   }, []);
 
   return (
-    <div>
+    <div id='card1'>
       {/* Main Card Content */}
       <div
         style={{ backgroundColor: '#F0ECE8' }}
@@ -47,7 +47,7 @@ const Card = () => {
             <img
               src={Maintext}
               alt="Main Text"
-              className="w-[55%] h-auto"
+              className="w-[45%] h-auto"
             />
           </div>
 

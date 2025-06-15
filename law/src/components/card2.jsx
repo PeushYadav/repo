@@ -1,4 +1,4 @@
- import React, { Component } from 'react';
+import React, { Component } from 'react';
 import Maincont from '../assets/card2maintext.svg';
 import Emblem from '../assets/emblem.svg';
 
@@ -30,13 +30,17 @@ export default class Card extends Component {
               </div>
 
               <div className='flex w-full justify-end pr-20'>
-                <button className='w-40px h-full text-2xl font-semibold cursor-pointer'>
+                <a
+                  href="/constitution.pdf"
+                  download="constitution.pdf"
+                  className='w-40px h-full text-2xl font-semibold cursor-pointer'
+                >
                   <div style={{ backgroundColor: '#BA5C45' }} className='w-60 h-20 flex justify-center items-center rounded-2xl relative'>
                     <div style={{ backgroundColor: '#EECF95' }} className='w-50 h-13 flex justify-center items-center rounded-2xl px-4'>
                       <p>Read Now !</p>
                     </div>
                   </div>
-                </button>
+                </a>
               </div>
 
             </div>

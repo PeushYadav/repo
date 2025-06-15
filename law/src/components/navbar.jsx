@@ -5,7 +5,7 @@ import Law_Lens from '../assets/Law_lens.svg';
 
 const Navbar = ({ onNavigate }) => {
   return (
-    <div style={{ backgroundColor: '#F0ECE8' }} className="aspekta-font shadow-xl">
+    <div style={{ backgroundColor: '#F0ECE8' }} className="aspekta-font shadow-xl overflow-x-hidden">
       <div className="flex justify-between items-center w-[92%]">
         <img src={Law_Lens} alt="Law Lens Logo" className="w-50 h-20 pl-15 pt-2 gap-[2vw]" />
         <div className="ml-10">

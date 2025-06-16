@@ -18,18 +18,17 @@ const MainPage = () => {
   return (
     <div
       style={{ backgroundColor: '#F0ECE8' }}
-      className="w-screen h-screen relative overflow-x-hidden"
+      className="w-screen min-h-screen relative overflow-x-hidden py-10"
     >
-      <div className="grid gap-4 grid-cols-12 z-10 w-screen p-10">
-        {/* Left Section */}
-        <div className="col-span-4 min-h-100 h-[400px] w-[95%] flex flex-wrap justify-end z-10">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-4 w-[90%] mx-auto">
+        <div className="md:col-span-4 flex flex-col items-center md:items-end">
           <div className="m-4">
-            <img src={leftMainText} alt="Law Lens Logo" className="w-80" />
+            <img src={leftMainText} alt="Law Lens Logo" className="w-64 md:w-80" />
           </div>
-          <div className="flex justify-end mt-10">
+          <div className="mt-6 md:mt-10 w-full md:w-[75%]">
             <p
               ref={leftTextRef}
-              className="text-left m-4 w-[75%] font-primary opacity-0"
+              className="text-left font-primary opacity-0"
             >
               Describe What Happened. We'll instantly show you the laws that
               protect you. Empower yourself with knowledge, clarity, and
@@ -38,23 +37,21 @@ const MainPage = () => {
           </div>
         </div>
 
-        {/* Center Image */}
-        <div className="col-span-5 min-h-100 h-[700px] w-[95%] grid z-10">
-          <div className="w-auto">
+        <div className="md:col-span-5 flex justify-center">
+          <div className="w-full md:w-auto">
             <img
               src={centerMain}
               alt="Law Lens Center"
-              className="w-full h-full mb-10"
+              className="w-full h-auto mb-10"
             />
           </div>
         </div>
 
-        {/* Right Section */}
-        <div className="col-span-3 min-h-100 w-[95%] z-10">
-          <div className="flex justify-start mt-10">
+        <div className="md:col-span-3 flex flex-col items-center md:items-start">
+          <div className="mt-6 md:mt-10 w-full md:w-[75%]">
             <p
               ref={rightTextRef}
-              className="text-left m-4 w-[75%] font-primary opacity-0"
+              className="text-left font-primary opacity-0"
             >
               Tell Us What You Faced. We'll quickly guide you to the laws that
               support you. Take control with clear, reliable
